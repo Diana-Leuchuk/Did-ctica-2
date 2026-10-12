@@ -30,6 +30,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: "Segoe UI", Arial, sans-serif;
             background: var(--fondo);
@@ -37,7 +41,7 @@
             line-height: 1.6;
         }
 
-        /* BARRA SUPERIOR */
+        /* ENCABEZADO INSTITUCIONAL */
 
         header {
             background: var(--azul);
@@ -56,18 +60,6 @@
             gap: 15px;
         }
 
-        .escudo {
-            width: 55px;
-            height: 55px;
-            border: 2px solid white;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            flex-shrink: 0;
-        }
-
         header h1 {
             font-size: 21px;
             line-height: 1.3;
@@ -78,7 +70,7 @@
             color: #d8e8fb;
         }
 
-        /* BOTÓN PORTAL DEL ESTUDIANTE */
+        /* ACCESO AL PORTAL */
 
         .etiqueta {
             background: rgba(255, 255, 255, 0.13);
@@ -198,7 +190,7 @@
             gap: 18px;
         }
 
-        /* TARJETAS Y BOTONES */
+        /* TARJETAS */
 
         .documento {
             display: flex;
@@ -307,12 +299,6 @@
                 gap: 10px;
             }
 
-            .escudo {
-                width: 48px;
-                height: 48px;
-                font-size: 24px;
-            }
-
             .etiqueta {
                 font-size: 12px;
             }
@@ -347,29 +333,25 @@
     <!-- BARRA INSTITUCIONAL -->
 
     <header>
-
         <div class="marca">
-
-
             <div>
                 <h1>Documentación Docente</h1>
                 <p>Escuela Superior · Salto, Uruguay</p>
             </div>
-
         </div>
 
-        <!-- PORTAL DEL ESTUDIANTE -->
+        <!-- ABRIR DRIVE EN UNA PESTAÑA INDEPENDIENTE -->
 
         <a
             class="etiqueta"
-            href="https://drive.google.com/drive/folders/1dCu_bkYOgFRaieWn87LX9D9_pUA3TR1k?usp=sharing"
+            href="https://drive.google.com/drive/folders/1dCu_bkYOgFRaieWn87LX9D9_pUA3TR1k"
             target="_blank"
             rel="noopener noreferrer"
+            referrerpolicy="no-referrer"
             aria-label="Abrir Portal del estudiante en Google Drive"
         >
-            Portal del estudiante 
+            Portal del estudiante ↗
         </a>
-
     </header>
 
     <main>
@@ -377,7 +359,6 @@
         <!-- INFORMACIÓN INSTITUCIONAL -->
 
         <section class="institucion">
-
             <div class="subtitulo">
                 Información institucional
             </div>
@@ -397,23 +378,16 @@
             </p>
 
             <div class="datos">
-
                 <span class="dato">📍 Salto, Uruguay</span>
-
                 <span class="dato">Documentación académica</span>
-
                 <span class="dato">Organización docente</span>
-
             </div>
-
         </section>
 
         <!-- DOCUMENTACIÓN Y RECURSOS -->
 
         <section>
-
             <div class="encabezado-documentos">
-
                 <div>
                     <h2>Documentación y recursos docentes</h2>
                     <p>
@@ -422,7 +396,6 @@
                 </div>
 
                 <span class="contador">7 secciones</span>
-
             </div>
 
             <div class="documentos">
@@ -431,9 +404,11 @@
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/drive/folders/1uVE4SRemMqTHWcz0pb1Bgm6RhrQCBIHS?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1uVE4SRemMqTHWcz0pb1Bgm6RhrQCBIHS"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir actividades del curso de Didáctica en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">📚</span>
 
@@ -442,15 +417,18 @@
                         <p>Actividades y materiales del curso</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
                 <!-- 2. PLANILLA DE ASISTENCIA -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1A2uQa_b6tYrBgo5Ug9t96y0N0zLMw2YW&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1A2uQa_b6tYrBgo5Ug9t96y0N0zLMw2YW"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir planilla de asistencia en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">📝</span>
 
@@ -459,15 +437,18 @@
                         <p>Registro de asistencia docente</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
                 <!-- 3. CLASES DICTADAS -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1QPR-MbRHTO5KxkO8TyXrbIN3nqpo7nan&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1QPR-MbRHTO5KxkO8TyXrbIN3nqpo7nan"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir registro de clases dictadas en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">🎓</span>
 
@@ -476,15 +457,18 @@
                         <p>Registro de las clases realizadas</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
                 <!-- 4. PROYECTO SIGTUR -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1TFJgS4WQAOUJVYfWYygwja22-DFh11Qn&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1TFJgS4WQAOUJVYfWYygwja22-DFh11Qn"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir documentación del proyecto SIGTUR en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">💻</span>
 
@@ -493,15 +477,18 @@
                         <p>Documentación del proyecto</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
                 <!-- 5. LISTA DE ALUMNOS -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1oPQIF8HKBBHjw-UvIqOtbLRVW2STtwWu&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1oPQIF8HKBBHjw-UvIqOtbLRVW2STtwWu"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir lista de alumnos en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">👥</span>
 
@@ -510,15 +497,18 @@
                         <p>Listado e información del grupo</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
-                <!-- 6. PLAN ANUAL Y PROGRAMA DE INGENIERÍA DEL SOFTWARE -->
+                <!-- 6. PLAN ANUAL Y PROGRAMA -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1Z4i2usInernKMazs7J4ldkvKW80yPcc9&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1Z4i2usInernKMazs7J4ldkvKW80yPcc9"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir plan anual y programa de Ingeniería del Software"
                 >
                     <span class="icono" aria-hidden="true">📖</span>
 
@@ -527,15 +517,18 @@
                         <p>Planificación y contenidos curriculares</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
                 <!-- 7. PLANIFICACIONES DE CLASE VISITA -->
 
                 <a
                     class="documento"
-                    href="https://drive.google.com/open?id=1q3CXxguUPGRhzNov8i1GHrQOPOPlCD8M&amp;usp=drive_copy"
+                    href="https://drive.google.com/open?id=1q3CXxguUPGRhzNov8i1GHrQOPOPlCD8M"
                     target="_blank"
                     rel="noopener noreferrer"
+                    referrerpolicy="no-referrer"
+                    aria-label="Abrir planificaciones de clase visita en Google Drive"
                 >
                     <span class="icono" aria-hidden="true">📅</span>
 
@@ -544,10 +537,10 @@
                         <p>Planificaciones y actividades para las visitas</p>
                     </span>
 
+                    <span class="flecha" aria-hidden="true">↗</span>
                 </a>
 
             </div>
-
         </section>
 
     </main>
@@ -555,7 +548,6 @@
     <!-- PIE DE PÁGINA -->
 
     <footer>
-
         <p>
             Escuela Superior “Catalina Harriague de Castaños”
         </p>
@@ -563,9 +555,8 @@
         <p class="secundario">
             Departamento de Salto · Uruguay
         </p>
-
     </footer>
 
 </body>
-
 </html>
+
